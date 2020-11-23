@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Mini Project</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+        <link rel="shortcut icon" href="assets/Icon_NotTransparent.png" type="image/x-icon">
+        <meta name="description" content="Kinda forum for Mini Project">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyAMrKpjZHQ6Jpoyy9LmneDLmw6-eYfrf2A",
+              authDomain: "minip-17d3c.firebaseapp.com",
+              databaseURL: "https://minip-17d3c.firebaseio.com",
+              projectId: "minip-17d3c",
+              storageBucket: "",
+              messagingSenderId: "279851214475",
+              appId: "1:279851214475:web:afeb23ca4ab74a7f"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <nav style="position:relative ; background-color: #282B30; color: white; align-content: center; text-align: center; align-self: center; align-items: center; padding: 10px; " >
+            
+            <a style="color: white; position: relative;
+            font-family: 'Josefin Sans', sans-serif; 
+            font-size: 30pt;position:-ms-page ; text-align: center; align-content: center; align-items: center;"  ><img src="assets/Icon_white_t.png" height="70px" width="70px"
+            style="margin-right:20px;">Mini Project</a>
+            
+        </nav>
+        <br><br>
+            <div style="position: relative; margin-left: 5%; margin-right: 5%;background-color: #282B30;font-family: 'Quicksand', sans-serif;" class="jumbotron">
+                <h3>Yay! 👻</h3>
+                <p class="lead">Sooo... This is the list that we have! Add more stuffs here! 😁</p>
+                <div class="card text-white bg-info mb-3" style="margin-left: 10px; margin-right: 1%;">
+                        <div class="card-header" style="background: #512e92; font-size: 15pt; font-weight:bolder;">Ideas</div>
+                        <div class="card-body">
+                          <ul id="prolist" type="none"></ul>
+                        </div>
+                        
+            </div>
+            
+            <div style="margin-left: 7px; margin-right: 1%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                <form id="enterIdea" class="form-inline my-2 my-lg-0" name="form1">
+                <input type="text" id="lel" name="eidea" style="width: 100%;" class="form-control " placeholder="Enter your awesome idea!">
+                <textarea class="form-control" name="idead" id="exampleTextarea" rows="3" placeholder="Describe your awesome idea!" style="width:100%; margin-top: 2px;"></textarea>
+                <button id="addit" class="btn btn-primary btn-lg btn-block" role="button" style="margin-top: 3px;" >Add it!</button>
+                </form>
+              </div>
+            
+          </div>
+        </div>
+        
+        <script src="app.js"></script>
+        <script defer src="./init-firebase.js"></script>
+        <br><br>
+        <footer style="text-align: center"><p>More updates coming soon! Enjoy! :D</p><p>© Our group 2019 #professionalism hehe 😎</p></footer>
+    </body>
+</html>
